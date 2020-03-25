@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "deploymentType": "kubernetes",
+    "gatewayType": "zuul",
+    "monitoring": "no",
+    "directoryPath": "../",
+    "appsFolders": ["store", "crm", "accountancy"],
+    "clusteredDbApps": [],
+    "consoleOptions": [],
+    "serviceDiscoveryType": "eureka",
+    "dockerRepositoryName": "pbesson",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "jhipster",
+    "kubernetesServiceType": "LoadBalancer",
+    "ingressDomain": "",
+    "istio": false,
+    "jwtSecretKey": "NzE5NDlmN2MwYjlmMTdhZGJkOTEzMTVlNGEyNzAzZTM5Nzk4NjQxM2RlNzM5MzhlZjFlN2NkYTdiMTZkOWQxZDVhOTZjNTU4N2U3Y2JkMTgyMGUxYWJkNjA4Nzc3ZTg1YTliMQ=="
+  }
+}

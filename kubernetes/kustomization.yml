@@ -1,0 +1,22 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+namespace: jhipster
+
+resources:
+  - namespace.yml
+  # Individual apps
+  - store/store-deployment.yml
+  - store/store-service.yml
+  - store/store-mysql.yml
+  - crm/crm-deployment.yml
+  - crm/crm-service.yml
+  - crm/crm-postgresql.yml
+  - accountancy/accountancy-deployment.yml
+  - accountancy/accountancy-service.yml
+  - accountancy/accountancy-mongodb.yml
+  # service discovery eureka/consul
+  - registry/jhipster-registry.yml
+  - registry/application-configmap.yml
+
+patchesJson6902:

@@ -1,0 +1,18 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: pbesson/store
+      context: ../store
+      jib: {}
+    - image: pbesson/crm
+      context: ../crm
+      jib: {}
+    - image: pbesson/accountancy
+      context: ../accountancy
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: '{{.IMAGE_NAME}}:latest'
+deploy:
+  kustomize: {}
